@@ -30,6 +30,7 @@
 		B54A155327E1BDE400752F04 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A155227E1BDE400752F04 /* CircleButtonAnimationView.swift */; };
 		B54A155527E1BE3E00752F04 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A155427E1BE3E00752F04 /* Color.swift */; };
 		B54A155727E1BE9300752F04 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A155627E1BE9300752F04 /* SettingsView.swift */; };
+		B54A155927E1BEC200752F04 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A155827E1BEC200752F04 /* XMarkButton.swift */; };
 		B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */; };
 		B5B1774727E17AC6003785AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774627E17AC6003785AF /* ContentView.swift */; };
 		B5B1774927E17ACF003785AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B1774827E17ACF003785AF /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		B54A155227E1BDE400752F04 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		B54A155427E1BE3E00752F04 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B54A155627E1BE9300752F04 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B54A155827E1BEC200752F04 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		B5B1774127E17AC6003785AF /* GoalsAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		B5B1774627E17AC6003785AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				B54A155027E1BDBD00752F04 /* CircleButtonView.swift */,
 				B54A155227E1BDE400752F04 /* CircleButtonAnimationView.swift */,
 				B54A155627E1BE9300752F04 /* SettingsView.swift */,
+				B54A155827E1BEC200752F04 /* XMarkButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */,
 				B54A154727E1B99D00752F04 /* AddGoalViewModel.swift in Sources */,
 				B54A153727E1B80B00752F04 /* EmojiTextField.swift in Sources */,
+				B54A155927E1BEC200752F04 /* XMarkButton.swift in Sources */,
 				B54A154B27E1BB0700752F04 /* GoalRepositoryProtocol.swift in Sources */,
 				B54A154F27E1BBAE00752F04 /* MockGoalRepository.swift in Sources */,
 				B54A153D27E1B8D600752F04 /* GoalView.swift in Sources */,
