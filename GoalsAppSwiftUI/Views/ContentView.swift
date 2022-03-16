@@ -159,19 +159,7 @@ extension ContentView {
             } content: {
                 AddNewGoal(repo: repo)
             }
-            
-            Button(action: {
-                showNewGoalsView = true
-            }) {
-                CircleButtonView(iconName: "pencil")
-            }
-            .opacity(isEditing ? 0.0 : 1.0)
-            
-            .fullScreenCover(isPresented: $showAddNewGoal) {
-                goalListViewModel.getAllGoals()
-            } content: {
-                AddNewGoal(repo: repo)
-            }
+
             Spacer()
         }
         .padding(.horizontal)
