@@ -19,6 +19,7 @@
 		B54A153D27E1B8D600752F04 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A153C27E1B8D600752F04 /* GoalView.swift */; };
 		B54A153F27E1B8FE00752F04 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A153E27E1B8FE00752F04 /* GoalViewModel.swift */; };
 		B54A154127E1B92900752F04 /* GoalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A154027E1B92900752F04 /* GoalListViewModel.swift */; };
+		B54A154327E1B95800752F04 /* AddNewGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A154227E1B95800752F04 /* AddNewGoal.swift */; };
 		B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */; };
 		B5B1774727E17AC6003785AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774627E17AC6003785AF /* ContentView.swift */; };
 		B5B1774927E17ACF003785AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B1774827E17ACF003785AF /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		B54A153C27E1B8D600752F04 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		B54A153E27E1B8FE00752F04 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
 		B54A154027E1B92900752F04 /* GoalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListViewModel.swift; sourceTree = "<group>"; };
+		B54A154227E1B95800752F04 /* AddNewGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGoal.swift; sourceTree = "<group>"; };
 		B5B1774127E17AC6003785AF /* GoalsAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		B5B1774627E17AC6003785AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				B54A153C27E1B8D600752F04 /* GoalView.swift */,
+				B54A154227E1B95800752F04 /* AddNewGoal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				B54A153527E1B7EA00752F04 /* DateUtils.swift in Sources */,
 				B54A153927E1B88F00752F04 /* NavigationBarUtil.swift in Sources */,
 				B54A154127E1B92900752F04 /* GoalListViewModel.swift in Sources */,
+				B54A154327E1B95800752F04 /* AddNewGoal.swift in Sources */,
 				B54A153B27E1B8A000752F04 /* AnimationUtil.swift in Sources */,
 				B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */,
 				B54A153727E1B80B00752F04 /* EmojiTextField.swift in Sources */,
