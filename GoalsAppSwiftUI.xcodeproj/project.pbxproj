@@ -10,6 +10,7 @@
 		B54A152527E1A31F00752F04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B54A152427E1A31F00752F04 /* GoogleService-Info.plist */; };
 		B54A152827E1B57900752F04 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B54A152727E1B57900752F04 /* FirebaseFirestore */; };
 		B54A152A27E1B57900752F04 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B54A152927E1B57900752F04 /* FirebaseFirestoreSwift-Beta */; };
+		B54A153127E1B71000752F04 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A153027E1B71000752F04 /* Goal.swift */; };
 		B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */; };
 		B5B1774727E17AC6003785AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774627E17AC6003785AF /* ContentView.swift */; };
 		B5B1774927E17ACF003785AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B1774827E17ACF003785AF /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		B54A152427E1A31F00752F04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B54A153027E1B71000752F04 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		B5B1774127E17AC6003785AF /* GoalsAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		B5B1774627E17AC6003785AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		B54A152B27E1B5B900752F04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B54A153027E1B71000752F04 /* Goal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B1774727E17AC6003785AF /* ContentView.swift in Sources */,
+				B54A153127E1B71000752F04 /* Goal.swift in Sources */,
 				B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
