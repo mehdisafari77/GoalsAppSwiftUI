@@ -29,6 +29,7 @@
 		B54A155127E1BDBD00752F04 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A155027E1BDBD00752F04 /* CircleButtonView.swift */; };
 		B54A155327E1BDE400752F04 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A155227E1BDE400752F04 /* CircleButtonAnimationView.swift */; };
 		B54A155527E1BE3E00752F04 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A155427E1BE3E00752F04 /* Color.swift */; };
+		B54A155727E1BE9300752F04 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A155627E1BE9300752F04 /* SettingsView.swift */; };
 		B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */; };
 		B5B1774727E17AC6003785AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774627E17AC6003785AF /* ContentView.swift */; };
 		B5B1774927E17ACF003785AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B1774827E17ACF003785AF /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		B54A155027E1BDBD00752F04 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		B54A155227E1BDE400752F04 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		B54A155427E1BE3E00752F04 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B54A155627E1BE9300752F04 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B5B1774127E17AC6003785AF /* GoalsAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		B5B1774627E17AC6003785AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				B54A154427E1B97B00752F04 /* GoalDetailView.swift */,
 				B54A155027E1BDBD00752F04 /* CircleButtonView.swift */,
 				B54A155227E1BDE400752F04 /* CircleButtonAnimationView.swift */,
+				B54A155627E1BE9300752F04 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				B54A153D27E1B8D600752F04 /* GoalView.swift in Sources */,
 				B54A153327E1B7B100752F04 /* ColorUtils.swift in Sources */,
 				B54A153F27E1B8FE00752F04 /* GoalViewModel.swift in Sources */,
+				B54A155727E1BE9300752F04 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
