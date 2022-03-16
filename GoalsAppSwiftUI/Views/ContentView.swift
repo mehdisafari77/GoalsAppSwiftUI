@@ -132,7 +132,7 @@ extension ContentView {
                 .foregroundColor(Color.theme.accent)
                 .animation(.none)
             Spacer()
-            CircleButtonView(iconName: "chevron.right")
+            CircleButtonView(iconName: "plus")
                 .rotationEffect(Angle(degrees: showAddNewGoal ? 180 : 0))
                 .onTapGesture {
                     withAnimation(.spring()) {
