@@ -9,12 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
     private var repo: GoalRepositoryProtocol
     
     @ObservedObject var goalListViewModel: GoalListViewModel
     
     @State private var isEditing = false
     @State private var showAddNewGoal = false
+    @State private var showGoals: Bool = false // animate Right
+    @State private var showNewGoalsView: Bool = false // new sheet
+    @State private var showSettingsView: Bool = false // new sheet
+
     
     init(repo: GoalRepositoryProtocol) {
         self.repo = repo
@@ -42,6 +47,7 @@ struct ContentView: View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
                 ScrollView(.vertical, showsIndicators: false) {
+                    homeHeader
                     LazyVGrid(columns: goalItems, spacing: 10) {
                         ForEach(goalListViewModel.goals, id: \.id) { goal in
                             NavigationLink(destination: GoalDetailView(goalDetailViewModel: GoalDetailViewModel(repo: repo, goal: goal))) {
@@ -107,30 +113,30 @@ extension ContentView {
     
     private var homeHeader: some View {
         HStack {
-            CircleButtonView(iconName: showPortfolio ? "plus" : "info")
+            CircleButtonView(iconName: showGoals ? "gear" : "info")
                 .animation(.none)
                 .onTapGesture {
-                    if showPortfolio {
-                        showPortfolioView.toggle()
+                    if showGoals {
+                        showNewGoalsView.toggle()
                     } else {
                         showSettingsView.toggle()
                     }
                 }
                 .background(
-                    CircleButtonAnimationView(animate: $showPortfolio)
+                    CircleButtonAnimationView(animate: $showAddNewGoal)
                 )
             Spacer()
-            Text(showPortfolio ? "Portfolio" : "Live Prices")
+            Text(showAddNewGoal ? "Goals" : "Manage Your Future!")
                 .font(.headline)
                 .fontWeight(.heavy)
                 .foregroundColor(Color.theme.accent)
                 .animation(.none)
             Spacer()
             CircleButtonView(iconName: "chevron.right")
-                .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
+                .rotationEffect(Angle(degrees: showAddNewGoal ? 180 : 0))
                 .onTapGesture {
                     withAnimation(.spring()) {
-                        showPortfolio.toggle()
+                        showAddNewGoal.toggle()
                     }
                 }
        }

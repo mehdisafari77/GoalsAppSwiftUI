@@ -21,8 +21,6 @@ struct SettingsView: View {
                     .ignoresSafeArea()
                 // content
                 List {
-                    coinGeckoSection
-                        .listRowBackground(Color.theme.background.opacity(0.5))
                     developerSection
                         .listRowBackground(Color.theme.background.opacity(0.5))
                     applicationSection
@@ -48,24 +46,6 @@ struct SettingsView_Previews: PreviewProvider {
     }
 }
 extension SettingsView {
-    
-    private var coinGeckoSection: some View {
-        Section(header: Text("Coin Gecko")) {
-            VStack(alignment: .leading) {
-                Image("coingecko")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 100)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                Text("The cryptocurrency data that is used in this app comes from a free API from CoinGecko! Prices may be slightly delayed.")
-                    .font(.callout)
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.theme.accent)
-            }
-            .padding(.vertical)
-            Link("Visit CoinGecko 🥳", destination: coingeckoURL)
-        }
-    }
     
     private var developerSection: some View {
         Section(header: Text("Developer")) {
