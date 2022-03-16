@@ -31,11 +31,11 @@ struct SettingsView: View {
             .accentColor(.blue)
             .listStyle(GroupedListStyle())
             .navigationTitle("Settings")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    XMarkButton()
-                }
-            }
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    XMarkButton()
+//                }
+//            }
         }
     }
 }
