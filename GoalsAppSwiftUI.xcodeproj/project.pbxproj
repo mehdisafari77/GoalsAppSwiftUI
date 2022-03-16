@@ -24,6 +24,7 @@
 		B54A154727E1B99D00752F04 /* AddGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A154627E1B99D00752F04 /* AddGoalViewModel.swift */; };
 		B54A154927E1B9BD00752F04 /* GoalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A154827E1B9BD00752F04 /* GoalDetailViewModel.swift */; };
 		B54A154B27E1BB0700752F04 /* GoalRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A154A27E1BB0700752F04 /* GoalRepositoryProtocol.swift */; };
+		B54A154D27E1BB3E00752F04 /* FirebaseGoalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A154C27E1BB3E00752F04 /* FirebaseGoalRepository.swift */; };
 		B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */; };
 		B5B1774727E17AC6003785AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774627E17AC6003785AF /* ContentView.swift */; };
 		B5B1774927E17ACF003785AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B1774827E17ACF003785AF /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		B54A154627E1B99D00752F04 /* AddGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewModel.swift; sourceTree = "<group>"; };
 		B54A154827E1B9BD00752F04 /* GoalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewModel.swift; sourceTree = "<group>"; };
 		B54A154A27E1BB0700752F04 /* GoalRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRepositoryProtocol.swift; sourceTree = "<group>"; };
+		B54A154C27E1BB3E00752F04 /* FirebaseGoalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGoalRepository.swift; sourceTree = "<group>"; };
 		B5B1774127E17AC6003785AF /* GoalsAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		B5B1774627E17AC6003785AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B54A154A27E1BB0700752F04 /* GoalRepositoryProtocol.swift */,
+				B54A154C27E1BB3E00752F04 /* FirebaseGoalRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				B5B1774727E17AC6003785AF /* ContentView.swift in Sources */,
 				B54A153127E1B71000752F04 /* Goal.swift in Sources */,
 				B54A153527E1B7EA00752F04 /* DateUtils.swift in Sources */,
+				B54A154D27E1BB3E00752F04 /* FirebaseGoalRepository.swift in Sources */,
 				B54A153927E1B88F00752F04 /* NavigationBarUtil.swift in Sources */,
 				B54A154127E1B92900752F04 /* GoalListViewModel.swift in Sources */,
 				B54A154927E1B9BD00752F04 /* GoalDetailViewModel.swift in Sources */,
