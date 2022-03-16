@@ -14,6 +14,8 @@
 		B54A153327E1B7B100752F04 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A153227E1B7B100752F04 /* ColorUtils.swift */; };
 		B54A153527E1B7EA00752F04 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A153427E1B7EA00752F04 /* DateUtils.swift */; };
 		B54A153727E1B80B00752F04 /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A153627E1B80B00752F04 /* EmojiTextField.swift */; };
+		B54A153927E1B88F00752F04 /* NavigationBarUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A153827E1B88F00752F04 /* NavigationBarUtil.swift */; };
+		B54A153B27E1B8A000752F04 /* AnimationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A153A27E1B8A000752F04 /* AnimationUtil.swift */; };
 		B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */; };
 		B5B1774727E17AC6003785AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774627E17AC6003785AF /* ContentView.swift */; };
 		B5B1774927E17ACF003785AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B1774827E17ACF003785AF /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		B54A153227E1B7B100752F04 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		B54A153427E1B7EA00752F04 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		B54A153627E1B80B00752F04 /* EmojiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextField.swift; sourceTree = "<group>"; };
+		B54A153827E1B88F00752F04 /* NavigationBarUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarUtil.swift; sourceTree = "<group>"; };
+		B54A153A27E1B8A000752F04 /* AnimationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationUtil.swift; sourceTree = "<group>"; };
 		B5B1774127E17AC6003785AF /* GoalsAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		B5B1774627E17AC6003785AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				B54A153227E1B7B100752F04 /* ColorUtils.swift */,
 				B54A153427E1B7EA00752F04 /* DateUtils.swift */,
 				B54A153627E1B80B00752F04 /* EmojiTextField.swift */,
+				B54A153827E1B88F00752F04 /* NavigationBarUtil.swift */,
+				B54A153A27E1B8A000752F04 /* AnimationUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 				B5B1774727E17AC6003785AF /* ContentView.swift in Sources */,
 				B54A153127E1B71000752F04 /* Goal.swift in Sources */,
 				B54A153527E1B7EA00752F04 /* DateUtils.swift in Sources */,
+				B54A153927E1B88F00752F04 /* NavigationBarUtil.swift in Sources */,
+				B54A153B27E1B8A000752F04 /* AnimationUtil.swift in Sources */,
 				B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */,
 				B54A153727E1B80B00752F04 /* EmojiTextField.swift in Sources */,
 				B54A153327E1B7B100752F04 /* ColorUtils.swift in Sources */,
