@@ -33,6 +33,24 @@ class FirebaseGoalRepository: GoalRepositoryProtocol {
         }
     }
     
+    func getAll(completion: @escaping (Result<[Goal]?, Error>) -> Void) {
+        db.collection("goals").getDocuments { snapshot, error in
+            guard let snapshot = snapshot, error == nil else {
+                completion(.failure(error ?? NSError(domain: "snapshot is nil", code: 102, userInfo: nil)))
+                return
+            }
+            
+            let goals: [Goal]? = snapshot.documents.compactMap { doc in
+                var goal = try? doc.data(as: Goal.self)
+                if goal != nil {
+                    goal!.id = doc.documentID
+                }
+                return goal
+            }
+            
+            completion(.success(goals))
+        }
+    }
     
     
 }
