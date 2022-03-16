@@ -113,7 +113,7 @@ extension ContentView {
     
     private var homeHeader: some View {
         HStack {
-            CircleButtonView(iconName: showGoals ? "gear" : "info")
+            CircleButtonView(iconName: "gear")
                 .animation(.none)
                 .onTapGesture {
                     if showGoals {
@@ -126,13 +126,15 @@ extension ContentView {
                     CircleButtonAnimationView(animate: $showAddNewGoal)
                 )
             Spacer()
-            Text(showAddNewGoal ? "Goals" : "Manage Your Future!")
-                .font(.headline)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.theme.accent)
-                .animation(.none)
-            Spacer()
             CircleButtonView(iconName: "plus")
+                .rotationEffect(Angle(degrees: showAddNewGoal ? 180 : 0))
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        showAddNewGoal.toggle()
+                    }
+                }
+            Spacer()
+            CircleButtonView(iconName: "pencil")
                 .rotationEffect(Angle(degrees: showAddNewGoal ? 180 : 0))
                 .onTapGesture {
                     withAnimation(.spring()) {
