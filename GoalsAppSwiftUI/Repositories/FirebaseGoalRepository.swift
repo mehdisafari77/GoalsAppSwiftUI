@@ -85,5 +85,28 @@ class FirebaseGoalRepository: GoalRepositoryProtocol {
         }
     }
     
+    func deleteGoalItem(goalId: String, item: String, completion: @escaping (Result<Goal?, Error>) -> Void) {
+        let ref = db.collection("goals").document(goalId)
+        
+        ref.updateData(["items": FieldValue.arrayRemove([item])]) { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                ref.getDocument { snapshot, error in
+                    guard let snapshot = snapshot, error == nil else {
+                        completion(.failure(error ?? NSError(domain: "snapshot for item delete is nil", code: 104, userInfo: nil)))
+                        return
+                    }
+                    
+                    var goal: Goal? = try? snapshot.data(as: Goal.self)
+                    if goal != nil {
+                        goal!.id = snapshot.documentID
+                        completion(.success(goal))
+                    }
+                }
+            }
+        }
+    }
     
 }
+
