@@ -77,23 +77,40 @@ struct ContentView: View {
                     }
                 }
                 
-                Button(action: {
-                    showAddNewGoal = true
-                }) {
-                    Image(systemName: "plus.circle")
-                        .font(.system(size: 64))
-                        .shadow(radius: 5)
-                        .clipped()
-                        .foregroundColor(.blue)
-                }
-                .padding(.trailing, 20)
-                .opacity(isEditing ? 0.0 : 1.0)
+//                Button(action: {
+//                    showAddNewGoal = true
+//                }) {
+//                    Image(systemName: "plus.circle")
+//                        .font(.system(size: 64))
+//                        .shadow(radius: 5)
+//                        .clipped()
+//                        .foregroundColor(.blue)
+//                }
+//                .padding(.trailing, 20)
+//                .opacity(isEditing ? 0.0 : 1.0)
                 
-                .fullScreenCover(isPresented: $showAddNewGoal) {
-                    goalListViewModel.getAllGoals()
-                } content: {
-                    AddNewGoal(repo: repo)
-                }
+//                Button(action: {
+//                    showSettingsView = true
+//                }) {
+//                    Image(systemName: "gear")
+//                        .font(.system(size: 64))
+//                        .shadow(radius: 5)
+//                        .clipped()
+//                        .foregroundColor(.blue)
+//                }
+//                .padding(.trailing, 20)
+//                .opacity(isEditing ? 0.0 : 1.0)
+//
+//
+//                .sheet(isPresented: $showSettingsView, content: {
+//                    SettingsView()
+//                })
+                
+//                .fullScreenCover(isPresented: $showSettingsView) {
+//                    goalListViewModel.getAllGoals()
+//                } content: {
+//                    AddNewGoal(repo: repo)
+//                }
 
             }
             
@@ -113,35 +130,50 @@ extension ContentView {
     
     private var homeHeader: some View {
         HStack {
-            CircleButtonView(iconName: "gear")
-                .animation(.none)
-                .onTapGesture {
-                    if showGoals {
-                        showNewGoalsView.toggle()
-                    } else {
-                        showSettingsView.toggle()
-                    }
-                }
-                .background(
-                    CircleButtonAnimationView(animate: $showAddNewGoal)
-                )
             Spacer()
-            CircleButtonView(iconName: "plus")
-                .rotationEffect(Angle(degrees: showAddNewGoal ? 180 : 0))
-                .onTapGesture {
-                    withAnimation(.spring()) {
-                        showAddNewGoal.toggle()
+            Button(action: {
+                showSettingsView = true
+            }) {
+                CircleButtonView(iconName: "gear")
+            }
+            .opacity(isEditing ? 0.0 : 1.0)
+            
+            .sheet(isPresented: $showSettingsView, content: {
+                SettingsView()
+            })
+            Button(action: {
+                showNewGoalsView = true
+            }) {
+                CircleButtonView(iconName: "plus")
+                    .rotationEffect(Angle(degrees: showAddNewGoal ? 180 : 0))
+                    .onTapGesture {
+                        withAnimation(.spring()) {
+                            showAddNewGoal.toggle()
                     }
                 }
+            }
+            .opacity(isEditing ? 0.0 : 1.0)
+            
+            .fullScreenCover(isPresented: $showAddNewGoal) {
+                goalListViewModel.getAllGoals()
+            } content: {
+                AddNewGoal(repo: repo)
+            }
+            
+            Button(action: {
+                showNewGoalsView = true
+            }) {
+                CircleButtonView(iconName: "pencil")
+            }
+            .opacity(isEditing ? 0.0 : 1.0)
+            
+            .fullScreenCover(isPresented: $showAddNewGoal) {
+                goalListViewModel.getAllGoals()
+            } content: {
+                AddNewGoal(repo: repo)
+            }
             Spacer()
-            CircleButtonView(iconName: "pencil")
-                .rotationEffect(Angle(degrees: showAddNewGoal ? 180 : 0))
-                .onTapGesture {
-                    withAnimation(.spring()) {
-                        showAddNewGoal.toggle()
-                    }
-                }
-       }
+        }
         .padding(.horizontal)
     }
 }
