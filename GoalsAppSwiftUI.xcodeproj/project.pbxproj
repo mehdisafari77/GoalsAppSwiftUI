@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54A152527E1A31F00752F04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B54A152427E1A31F00752F04 /* GoogleService-Info.plist */; };
 		B5B1774527E17AC6003785AF /* GoalsAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */; };
 		B5B1774727E17AC6003785AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1774627E17AC6003785AF /* ContentView.swift */; };
 		B5B1774927E17ACF003785AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B1774827E17ACF003785AF /* Assets.xcassets */; };
 		B5B1774C27E17ACF003785AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B1774B27E17ACF003785AF /* Preview Assets.xcassets */; };
-		B5B1775527E180EB003785AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5B1775427E180EB003785AF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B54A152427E1A31F00752F04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5B1774127E17AC6003785AF /* GoalsAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		B5B1774627E17AC6003785AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5B1774827E17ACF003785AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B1774B27E17ACF003785AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B5B1775427E180EB003785AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */,
 				B5B1774627E17AC6003785AF /* ContentView.swift */,
-				B5B1775427E180EB003785AF /* GoogleService-Info.plist */,
+				B54A152427E1A31F00752F04 /* GoogleService-Info.plist */,
 				B5B1774827E17ACF003785AF /* Assets.xcassets */,
 				B5B1774A27E17ACF003785AF /* Preview Content */,
 			);
@@ -130,7 +130,7 @@
 			files = (
 				B5B1774C27E17ACF003785AF /* Preview Assets.xcassets in Resources */,
 				B5B1774927E17ACF003785AF /* Assets.xcassets in Resources */,
-				B5B1775527E180EB003785AF /* GoogleService-Info.plist in Resources */,
+				B54A152527E1A31F00752F04 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
