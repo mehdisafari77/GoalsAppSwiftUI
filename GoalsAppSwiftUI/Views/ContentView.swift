@@ -101,3 +101,39 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(repo: MockGoalRepository())
     }
 }
+
+
+extension ContentView {
+    
+    private var homeHeader: some View {
+        HStack {
+            CircleButtonView(iconName: showPortfolio ? "plus" : "info")
+                .animation(.none)
+                .onTapGesture {
+                    if showPortfolio {
+                        showPortfolioView.toggle()
+                    } else {
+                        showSettingsView.toggle()
+                    }
+                }
+                .background(
+                    CircleButtonAnimationView(animate: $showPortfolio)
+                )
+            Spacer()
+            Text(showPortfolio ? "Portfolio" : "Live Prices")
+                .font(.headline)
+                .fontWeight(.heavy)
+                .foregroundColor(Color.theme.accent)
+                .animation(.none)
+            Spacer()
+            CircleButtonView(iconName: "chevron.right")
+                .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        showPortfolio.toggle()
+                    }
+                }
+       }
+        .padding(.horizontal)
+    }
+}
