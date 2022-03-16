@@ -22,7 +22,7 @@ struct AddNewGoal: View {
             VStack(spacing: 0) {
                 Form {
                     Section {
-                        TextField("Goal name", text: $addGoalVM.name)
+                        TextField("Goal Title", text: $addGoalVM.name)
                         
                         DatePicker(selection: $addGoalVM.dueOn, in: Date()..., displayedComponents: .date) {
                             Text("Select goal due date")
@@ -36,7 +36,7 @@ struct AddNewGoal: View {
                 
                 List {
                     HStack {
-                        TextField("Enter goal", text: $addGoalVM.goal)
+                        TextField("Enter goal name...", text: $addGoalVM.goal)
                             .onSubmit {
                                 addGoalVM.addGoalToList(item: addGoalVM.goal)
                             }
