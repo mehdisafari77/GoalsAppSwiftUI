@@ -75,6 +75,7 @@
 		B54A152C27E1B5BD00752F04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B5B1774627E17AC6003785AF /* ContentView.swift */,
 				B54A153C27E1B8D600752F04 /* GoalView.swift */,
 				B54A154227E1B95800752F04 /* AddNewGoal.swift */,
 				B54A154427E1B97B00752F04 /* GoalDetailView.swift */,
@@ -137,7 +138,6 @@
 				B54A152C27E1B5BD00752F04 /* Views */,
 				B54A152B27E1B5B900752F04 /* Models */,
 				B5B1774427E17AC6003785AF /* GoalsAppSwiftUIApp.swift */,
-				B5B1774627E17AC6003785AF /* ContentView.swift */,
 				B54A152427E1A31F00752F04 /* GoogleService-Info.plist */,
 				B5B1774827E17ACF003785AF /* Assets.xcassets */,
 				B5B1774A27E17ACF003785AF /* Preview Content */,
