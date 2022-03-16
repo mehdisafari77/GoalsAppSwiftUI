@@ -44,6 +44,7 @@ struct ContentView: View {
     }
     
     var body: some View {
+
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
                 ScrollView(.vertical, showsIndicators: false) {
@@ -76,41 +77,6 @@ struct ContentView: View {
                         }
                     }
                 }
-                
-//                Button(action: {
-//                    showAddNewGoal = true
-//                }) {
-//                    Image(systemName: "plus.circle")
-//                        .font(.system(size: 64))
-//                        .shadow(radius: 5)
-//                        .clipped()
-//                        .foregroundColor(.blue)
-//                }
-//                .padding(.trailing, 20)
-//                .opacity(isEditing ? 0.0 : 1.0)
-                
-//                Button(action: {
-//                    showSettingsView = true
-//                }) {
-//                    Image(systemName: "gear")
-//                        .font(.system(size: 64))
-//                        .shadow(radius: 5)
-//                        .clipped()
-//                        .foregroundColor(.blue)
-//                }
-//                .padding(.trailing, 20)
-//                .opacity(isEditing ? 0.0 : 1.0)
-//
-//
-//                .sheet(isPresented: $showSettingsView, content: {
-//                    SettingsView()
-//                })
-                
-//                .fullScreenCover(isPresented: $showSettingsView) {
-//                    goalListViewModel.getAllGoals()
-//                } content: {
-//                    AddNewGoal(repo: repo)
-//                }
 
             }
             
@@ -161,6 +127,19 @@ extension ContentView {
             }
 
             Spacer()
+        }
+        .onAppear {
+            FirebaseGoalRepository().add(goal: Goal.sampleGoals()[0]) { result in
+                switch result {
+                case .success(let goal):
+                    print(goal?.name ?? "")
+                    print(goal?.items ?? "")
+                    
+                case .failure(let err):
+                    print(err.localizedDescription)
+                    
+                }
+            }
         }
         .padding(.horizontal)
     }
