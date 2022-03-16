@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
-struct GoalsAppSwiftUIApp: App {
+struct GoalsAppApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(repo: MockGoalRepository())
+            //ContentView(repo: FirebaseGoalRepository())
         }
     }
 }
