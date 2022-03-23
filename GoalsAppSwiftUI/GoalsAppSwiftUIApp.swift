@@ -18,8 +18,8 @@ struct GoalsAppApp: App {
     var body: some Scene {
         WindowGroup {
             // For Firebase Testing Purposes
-//            ContentView(repo: MockGoalRepository())
-            ContentView(repo: FirebaseGoalRepository())
+            ContentView(repo: MockGoalRepository())
+//            ContentView(repo: FirebaseGoalRepository())
         }
     }
 }
