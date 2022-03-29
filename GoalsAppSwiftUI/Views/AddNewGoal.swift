@@ -17,6 +17,7 @@ struct AddNewGoal: View {
         _addGoalVM = StateObject<AddGoalViewModel>.init(wrappedValue: AddGoalViewModel(repo: repo))
     }
     
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {

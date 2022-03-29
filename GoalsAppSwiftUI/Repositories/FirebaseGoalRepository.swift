@@ -16,8 +16,12 @@ class FirebaseGoalRepository: GoalRepositoryProtocol {
     func add(goal: Goal, completion: @escaping (Result<Goal?, Error>) -> Void) {
         do {
             
+//            let randomGoal = Goal(id: UUID().uuidString, name: "personal", dueOn: Date(), color: "#0984e5", icon: "💼", items: ["1", "2", "3"])
+            
             let ref = try db.collection("goals").addDocument(from: goal)
             
+//            let ref = try db.collection("goals").addDocument(from: randomGoal)
+
             ref.getDocument { snapshot, error in
                 guard let snapshot = snapshot, error == nil else {
                     completion(.failure(error ?? NSError(domain: "snapshot is nil", code: 101, userInfo: nil)))
@@ -26,6 +30,8 @@ class FirebaseGoalRepository: GoalRepositoryProtocol {
                 
                 let goal = try? snapshot.data(as: Goal.self)
                 completion(.success(goal))
+                
+                print(goal.debugDescription)
             }
             
         } catch let error {

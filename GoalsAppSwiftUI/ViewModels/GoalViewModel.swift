@@ -17,7 +17,7 @@ struct GoalViewModel {
     }
     
     var name: String {
-        goal.name
+        goal.name + " "
     }
     
     var dueOnDate: Date {

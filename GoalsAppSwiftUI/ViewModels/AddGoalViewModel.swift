@@ -34,6 +34,9 @@ class AddGoalViewModel: ObservableObject {
         let goal = Goal(name: name, dueOn: dueOn, color: UIColor(color).hexStringFromColor(), icon: icon, items: items)
         
         repo.add(goal: goal) { result in
+            
+            print(goal.items.debugDescription)
+            
             switch result {
             case .success(let savedGoal):
                 DispatchQueue.main.async {
