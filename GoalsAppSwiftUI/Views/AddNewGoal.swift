@@ -37,7 +37,7 @@ struct AddNewGoal: View {
                 
                 List {
                     HStack {
-                        TextField("Enter one goal...", text: $addGoalVM.goal)
+                        TextField("Enter one goal...", text: $addGoalVM.items.first ?? "error")
                             .onSubmit {
                                 addGoalVM.addGoalToList(item: addGoalVM.goal)
                             }
