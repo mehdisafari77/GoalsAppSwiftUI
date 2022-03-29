@@ -41,6 +41,7 @@ class AddGoalViewModel: ObservableObject {
             case .success(let savedGoal):
                 DispatchQueue.main.async {
                     self.saved = savedGoal == nil ? false : true
+                    self.addGoalToList(item: savedGoal?.items.first ?? ("error"))
                 }
                 
             case .failure(let err):
