@@ -129,17 +129,25 @@ extension ContentView {
             Spacer()
         }
         .onAppear {
-            FirebaseGoalRepository().add(goal: Goal.sampleGoals()[0]) { result in
-                switch result {
-                case .success(let goal):
-                    print(goal?.name ?? "")
-                    print(goal?.items ?? "")
-                    
-                case .failure(let err):
-                    print(err.localizedDescription)
-                    
+            
+            if goalListViewModel.goals.isEmpty {
+                
+                FirebaseGoalRepository().add(goal: Goal.sampleGoals()[0]) { result in
+                    switch result {
+                    case .success(let goal):
+                        print(goal?.name ?? "")
+                        print(goal?.items ?? "")
+                        
+                        
+                    case .failure(let err):
+                        print(err.localizedDescription)
+                        
+                    }
                 }
             }
+            
+            
+            
         }
         .padding(.horizontal)
     }
